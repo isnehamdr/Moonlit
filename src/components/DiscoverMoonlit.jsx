@@ -44,7 +44,7 @@ function Background() {
 export default function DiscoverMoonlit() {
   return (
     <section aria-labelledby="discover-title"
-      className="relative flex min-h-[440px] items-center justify-center bg-[#0B1B33] px-4 py-10 sm:min-h-[520px] sm:px-6 sm:py-14 lg:min-h-[600px] lg:py-14">
+      className="relative flex min-h-[440px] items-center justify-center bg-[#0B1B33] px-6 py-10 sm:min-h-[520px] sm:px-6 sm:py-14 lg:min-h-[600px] lg:py-14">
       <Background />
 
       <div className="relative w-full max-w-[680px] bg-[#F6F4EF] px-6 py-8 text-center shadow-[0_12px_40px_rgba(11,27,51,.35)] sm:px-10 sm:py-10 lg:px-10 lg:py-8">

@@ -197,7 +197,17 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-2 border-t border-[#F6F4EF]/20 pt-6 text-center text-[13px] text-[#F6F4EF]/70 sm:flex-row sm:text-left">
           <p>&copy; {new Date().getFullYear()} Moonlit Hotels &amp; Resorts. All rights reserved.</p>
-          <p>Global standards, local soul. Kathmandu, Nepal.</p>
+         <p>
+  Crafted by{" "}
+  <a
+    href="https://sait.com.np/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-[#F6F4EF] transition-colors hover:text-[#C6A560]"
+  >
+    S.A. I.T Solution Nepal
+  </a>
+</p>
         </div>
       </div>
     </footer>
