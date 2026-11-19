@@ -1,33 +1,27 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import BrandCollections from './components/BrandCollection'
-import MoonlitCircleTiers from './components/MoonlitCircleTiers'
-
-import DiscoverMoonlit from './components/DiscoverMoonlit'
-import WhyMoonlit from './components/WhyMoonlit'
 import Footer from './components/Footer '
 import BackToTop from './components/BackToTop'
-import KeyFacts from './components/KeyFacts'
-import LoyaltyOffer from './components/LoyaltyOffer'
+import HomePage from './pages/HomePage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import BrandsPage from './pages/BrandsPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+     <BrowserRouter>
     <Navbar/>
     <BackToTop/>
-    <Hero/>
-    <BrandCollections/>
-    
-  <LoyaltyOffer/>
-  <MoonlitCircleTiers/>
-    <KeyFacts/>
-    <DiscoverMoonlit/>
-    <WhyMoonlit/>
+    <Routes>
+         <Route path="/" element={<HomePage/>} />
+          <Route path="/brands" element={<BrandsPage/>} />
+      </Routes>
+ 
     <Footer/>
+    </BrowserRouter>
 
     </>
   )

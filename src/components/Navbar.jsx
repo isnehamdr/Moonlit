@@ -1,29 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-/*
-  NAVBAR (Wyndham layout, Moonlit content and colours)
 
-  Scroll behaviour:
-    - The announcement strip scrolls away with the page.
-    - Scrolling DOWN: the main bar slides out of sight, the search band stays pinned at the top.
-    - Scrolling UP: the main bar slides back in above the search band.
-
-  Search band:
-    - 1024px and up: one full row (destination, dates, rooms and guests, rates, search).
-    - Below 1024px: one slim row showing a summary. Tap it to open the full form as a panel,
-      so the pinned band never covers the screen on phones and tablets.
-
-  Menu on phones and tablets:
-    - The hamburger opens a full-screen menu that slides in from the right and slides back out
-      when closed. It has a "Book now" button that opens the search panel.
-
-  Client colours, written as hex codes:
-    Midnight Navy #0B1B33 · Royal Navy #152A4D · Moonlit Gold #C6A560
-    Burnished Gold #A8842F · Himalayan White #F6F4EF · Slate Stone #5F6B7A
-
-  Swap this one line if the project uses Inertia:
-  import { Link as NavLink } from '@inertiajs/react'
-*/
 const NavLink = ({ href, children, ...props }) => (
   <a href={href} {...props}>{children}</a>
 )
@@ -39,12 +16,13 @@ const announcements = [
 ]
 
 const brands = [
-  { name: 'Moonlit Grand', desc: "The city's address", href: '/brands/grand', color: '#6B1E2E' },
-  { name: 'Moonlit Sanctuary', desc: 'Restore in the mountains', href: '/brands/sanctuary', color: '#2F5D50' },
-  { name: 'Moonlit Select', desc: 'Smart, comfortable, dependable', href: '/brands/select', color: '#2A6496' },
-  { name: 'Moonlit Inn', desc: 'Good rest on every road', href: '/brands/inn', color: '#B5541C' },
-  { name: 'Moonlit Hearth', desc: 'Stay inside the story', href: '/brands/hearth', color: '#7B3F26' },
+  { name: 'Moonlit Grand',     desc: "The city's address",         href: '/brands#moonlit-grand',     color: '#6B1E2E' },
+  { name: 'Moonlit Sanctuary', desc: 'Restore in the mountains',   href: '/brands#moonlit-sanctuary', color: '#2F5D50' },
+  { name: 'Moonlit Select',    desc: 'Smart, comfortable, dependable', href: '/brands#moonlit-select', color: '#2A6496' },
+  { name: 'Moonlit Inn',       desc: 'Good rest on every road',    href: '/brands#moonlit-inn',       color: '#B5541C' },
+  { name: 'Moonlit Hearth',    desc: 'Stay inside the story',      href: '/brands#moonlit-hearth',    color: '#7B3F26' },
 ]
+
 const services = [
   { name: 'Management', desc: 'We run your hotel, you own it', href: '/services/management' },
   { name: 'Franchise', desc: 'Operate under a Moonlit brand', href: '/services/franchise' },
