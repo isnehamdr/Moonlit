@@ -10,7 +10,7 @@ const LOGO = '/images/logo.png'
 
 /* ------------------------------- content ------------------------------- */
 const announcements = [
-  { label: 'Moonlit Circle:', text: 'One loyalty program for every Moonlit hotel. Join free when it launches.', link: 'Learn more', href: '/moonlit-circle' },
+  { label: 'Moonlit Circle:', text: 'One loyalty program for every Moonlit hotel. Join free when it launches.', link: 'Learn more', href: '/services' },
   { label: 'Franchise:', text: 'Moonlit Select, Inn and Hearth first. Grand and Sanctuary by approval.', link: 'See how it works', href: '/services/franchise' },
   { label: 'For hotel owners:', text: 'Start with an Asset Health Check or a site visit.', link: 'Get in touch', href: '/contact?type=health-check' },
 ]
@@ -24,25 +24,25 @@ const brands = [
 ]
 
 const services = [
-  { name: 'Management', desc: 'We run your hotel, you own it', href: '/services/management' },
-  { name: 'Franchise', desc: 'Operate under a Moonlit brand', href: '/services/franchise' },
-  { name: 'Consulting and pre-opening', desc: 'Concept, budgets, SOPs, hiring', href: '/services/consulting' },
-  { name: 'Conversion', desc: 'Relaunch an existing hotel', href: '/services/conversion' },
+  { name: 'Management', desc: 'We run your hotel, you own it', href: '/services#management' },
+  { name: 'Franchise', desc: 'Operate under a Moonlit brand', href: '/services#franchise' },
+  { name: 'Consulting and pre-opening', desc: 'Concept, budgets, SOPs, hiring', href: '/services#consulting' },
+  { name: 'Conversion', desc: 'Relaunch an existing hotel', href: '/services#conversion' },
 ]
 const circle = [
-  { name: 'How it works', desc: 'Join free, stay and earn, rise', href: '/moonlit-circle' },
-  { name: 'The four tiers', desc: 'Crescent, Half Moon, Full Moon, Supermoon', href: '/moonlit-circle#tiers' },
-  { name: 'Member benefits', desc: 'Member rates, upgrades, lounge access', href: '/moonlit-circle#benefits' },
+  { name: 'How it works', desc: 'Join free, stay and earn, rise', href: '/loyalty-program' },
+  { name: 'The four tiers', desc: 'Crescent, Half Moon, Full Moon, Supermoon', href: '/loyalty-program#tiers' },
+  { name: 'Member benefits', desc: 'Member rates, upgrades, lounge access', href: '/loyalty-program#benefits' },
 ]
 const about = [
   { name: 'Our story', desc: 'Vision and mission', href: '/about' },
-  { name: 'Leadership', desc: 'The people behind MHR', href: '/about/leadership' },
-  { name: 'Why owners choose us', desc: 'Our approach to your asset', href: '/about/why-mhr' },
+  { name: 'Leadership', desc: 'The people behind MHR', href: '/about' },
+  { name: 'Why owners choose us', desc: 'Our approach to your asset', href: '/about' },
 ]
 const partner = [
   { name: 'Start a franchise conversation', desc: 'Brand, standards and training', href: '/services/franchise' },
-  { name: 'Book an Asset Health Check', desc: 'For hotel and resort owners', href: '/contact?type=health-check' },
-  { name: 'Contact the team', desc: 'marketing@moonlithotels.com', href: '/contact' },
+  { name: 'Book an Asset Health Check', desc: 'For hotel and resort owners', href: '/contact-us' },
+  { name: 'Contact the team', desc: 'marketing@moonlithotels.com', href: '/contact-us' },
 ]
 
 // Every menu is a wide panel: content on the left, image with text and a button on the right.
@@ -60,10 +60,10 @@ const menus = [
     image: { src: '/images/service.jpg', alt: 'Hotel management team at work', from: '#152A4D', to: '#0B1B33',
       title: 'Hotel & Resort Owners', text: 'One accountable team, from first sketch to sustained performance.',
       cta: 'Learn more', href: '/services' } },
-  { id: 'circle', kind: 'list', label: 'Moonlit Circle', items: circle, footer: { name: 'Join free', href: '/moonlit-circle' },
+  { id: 'circle', kind: 'list', label: 'Moonlit Circle', items: circle, footer: { name: 'Join free', href: '/loyalty-program' },
     image: { src: '/images/loyalty.jpg', alt: 'A guest being welcomed at a Moonlit hotel', from: '#0B1B33', to: '#A8842F',
       title: 'Moonlit Circle', text: 'One loyalty program for every Moonlit hotel. Your light is on wherever you stay.',
-      cta: 'Join free', href: '/moonlit-circle' } },
+      cta: 'Join free', href: '/loyalty-program' } },
   { id: 'about', kind: 'list', label: 'About', items: about,
     image: { src: '/images/about.jpg', alt: 'Kathmandu, where Moonlit Hotels & Resorts is based', from: '#152A4D', to: '#5F6B7A',
       title: 'Global standards, local soul', text: 'A Kathmandu-based team guiding hotels and resorts from first sketch to sustained performance.',
@@ -71,7 +71,7 @@ const menus = [
   { id: 'partner', kind: 'list', label: 'Partner with us', items: partner,
     image: { src: '/images/partner.jpg', alt: 'Hotel owner meeting the Moonlit team', from: '#0B1B33', to: '#152A4D',
       title: 'Partner with us', text: 'A partner through every season and market cycle. Start with a first conversation.',
-      cta: 'Get in touch', href: '/contact?type=partner' } },
+      cta: 'Get in touch', href: '/contact-us' } },
 ]
 
 /* ------------------------------- small parts ------------------------------- */

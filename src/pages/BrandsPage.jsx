@@ -119,7 +119,8 @@ export default function BrandsPage() {
           crumbs={[{ name: 'Home', href: '/' }, { name: 'Our brands' }]}
           title="Our Brands"
           text="Five brands, one family. Every Moonlit brand carries the same promise, global standards and local soul, and the same MHR mark. Each has its own character and its own guest."
-          image="/images/brands-hero.jpg"
+          image="/images/hero.jpeg"
+          
         />
 
         <section aria-label="Moonlit brands by tier" className="bg-[#F6F4EF] py-10 sm:py-14 lg:py-16">
