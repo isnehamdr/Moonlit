@@ -1,28 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-/*
-  ABOUT PAGE  (route: /about)
-  The navbar and footer come from the layout in App.jsx, so they are not repeated here.
-
-  1. Header (Midnight Navy)
-  2. Who we are, with the company at a glance (Himalayan White)
-  3. Vision and mission (Royal Navy)
-  4. Key facts (Himalayan White)
-  5. Why owners choose us (Midnight Navy)           id: why
-  6. Leadership (Himalayan White)                    id: leadership
-  All content comes from the Corporate factsheet.
-
-  Photos (all optional, with a fallback if missing):
-    public/images/about-hero.jpg
-    public/images/team/roshan-khawas.jpg, arun-kumar-puri.jpg, madhukar-aran.jpg
-
-  Client colours, written as hex codes:
-    Midnight Navy #0B1B33 · Royal Navy #152A4D · Moonlit Gold #C6A560 · Burnished Gold #A8842F
-    Himalayan White #F6F4EF · Slate Stone #5F6B7A
-*/
-
-/* Link used on this page. Pages inside the site use React Router; mailto:, https:// and #section links stay normal links. */
 const NavLink = ({ href, children, ...props }) => {
   const plain = !href || href.startsWith('#') || /^(https?:|mailto:|tel:|\/\/)/.test(href)
   return plain

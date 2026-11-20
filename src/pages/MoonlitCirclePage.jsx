@@ -317,29 +317,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-/*
-  MOONLIT CIRCLE PAGE  (route: /moonlit-circle)
-  The navbar and footer come from the layout in App.jsx, so they are not repeated here.
-
-  1. Header with the loyalty program logo (Midnight Navy)
-  2. One account, five brands (Himalayan White)
-  3. How it works (Royal Navy)           id: how-it-works
-  4. The four tiers as membership cards  id: tiers, benefits
-  5. Join (Midnight Navy)                id: join, terms
-  Content comes from the Moonlit Circle factsheet. The home page already introduces the program and
-  shows the tiers as a slider, so this page goes deeper instead of repeating it.
-
-  Logo: public/images/loyaltyprogram.jpeg (if missing, an emblem drawn in code is shown instead).
-  Tier card images: public/images/tiers/crescent.jpeg, half-moon.jpeg, full-moon.jpeg, supermoon.jpeg
-  (if missing, a code-drawn card is shown as fallback).
-
-  Client colours, written as hex codes:
-    Midnight Navy #0B1B33 · Royal Navy #152A4D · Moonlit Gold #C6A560 · Burnished Gold #A8842F
-    Himalayan White #F6F4EF · Slate Stone #5F6B7A
-    Brands: Grand #6B1E2E · Sanctuary #2F5D50 · Select #2A6496 · Inn #B5541C · Hearth #7B3F26
-*/
-
-/* Link used on this page. Pages inside the site use React Router; mailto:, https:// and #section links stay normal links. */
 const NavLink = ({ href, children, ...props }) => {
   const plain = !href || href.startsWith('#') || /^(https?:|mailto:|tel:|\/\/)/.test(href)
   return plain
