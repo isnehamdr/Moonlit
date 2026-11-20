@@ -218,7 +218,7 @@ export default function AboutPage() {
           </ul>
 
           <div className="mt-10 text-center">
-            <NavLink href="/contact?type=partner"
+            <NavLink href="/contact-us"
               className="inline-block w-full bg-[#C6A560] px-10 py-3.5 text-center text-[13px] font-bold uppercase tracking-wide text-[#0B1B33] transition-colors hover:bg-[#A8842F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F6F4EF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1B33] sm:w-auto">
               Start a conversation
             </NavLink>

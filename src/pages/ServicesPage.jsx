@@ -114,12 +114,12 @@ function ServiceCard({ s }) {
 
       {s.note && <p className="mt-5 text-[14px] leading-relaxed text-[#5F6B7A]">{s.note}</p>}
 
-      <div className="mt-auto pt-6">
+      {/* <div className="mt-auto pt-6">
         <NavLink href={s.href}
           className="block border-2 border-[#A8842F] px-6 py-3 text-center text-[13px] font-bold uppercase tracking-wide text-[#0B1B33] transition-colors hover:bg-[#C6A560] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33] focus-visible:ring-offset-2 sm:inline-block">
           Explore {s.title.split(' and ')[0]}
         </NavLink>
-      </div>
+      </div> */}
     </article>
   )
 }
@@ -244,11 +244,11 @@ export default function ServicesPage() {
           </ol>
 
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:gap-4">
-            <NavLink href="/contact?type=partner"
+            <NavLink href="/contact-us"
               className="bg-[#C6A560] px-8 py-3.5 text-center text-[13px] font-bold uppercase tracking-wide text-[#0B1B33] transition-colors hover:bg-[#A8842F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F6F4EF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1B33]">
               Start a conversation
             </NavLink>
-            <NavLink href="/contact?type=health-check"
+            <NavLink href="/contact-us"
               className="border-2 border-[#F6F4EF]/60 px-8 py-3.5 text-center text-[13px] font-bold uppercase tracking-wide text-[#F6F4EF] transition-colors hover:border-[#C6A560] hover:text-[#C6A560] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A560] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1B33]">
               Book an Asset Health Check
             </NavLink>

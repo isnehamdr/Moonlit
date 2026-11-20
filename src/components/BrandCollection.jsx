@@ -170,31 +170,31 @@ const brands = [
   {
     name: 'Moonlit Grand', tagline: "The city's address",
     text: 'A luxury city hotel for corporate guests, diplomats, weddings and conferences, in Kathmandu, Pokhara and Lalitpur.',
-    size: '120 to 300 rooms', color: '#6B1E2E', href: '/brands/grand',
+    size: '120 to 300 rooms', color: '#6B1E2E', href: '/brands#moonlit-grand',
     image: '/images/MoonlitGrand.png', alt: 'A luxury city hotel',
   },
   {
     name: 'Moonlit Sanctuary', tagline: 'Restore in the mountains',
     text: 'A luxury resort and wellness retreat by the lakeside, in the hills or in the jungle, for couples and international guests.',
-    size: '30 to 120 rooms', color: '#2F5D50', href: '/brands/sanctuary',
+    size: '30 to 120 rooms', color: '#2F5D50', href: '/brands#moonlit-sanctuary',
     image: '/images/MoonlitSanctuary.png', alt: 'A mountain wellness resort',
   },
   {
     name: 'Moonlit Select', tagline: 'Smart, comfortable, dependable',
     text: 'An upscale business hotel for business travellers, government and NGOs, in the secondary cities of Nepal.',
-    size: '60 to 150 rooms', color: '#2A6496', href: '/brands/select',
+    size: '60 to 150 rooms', color: '#2A6496', href: '/brands#moonlit-select',
     image: '/images/MoonlitSelect.png', alt: 'An upscale business hotel',
   },
   {
     name: 'Moonlit Inn', tagline: 'Good rest on every road',
     text: 'Midscale limited service for road travellers, families and trekkers, along highways, trailheads and transit towns.',
-    size: '30 to 80 rooms', color: '#B5541C', href: '/brands/inn',
+    size: '30 to 80 rooms', color: '#B5541C', href: '/brands#moonlit-inn',
     image: '/images/MoonlitInn.png', alt: 'A roadside inn',
   },
   {
     name: 'Moonlit Hearth', tagline: 'Stay inside the story',
     text: 'Boutique heritage stays for culture seekers and independent travellers, in old towns and villages.',
-    size: '8 to 30 rooms', color: '#7B3F26', href: '/brands/hearth',
+    size: '8 to 30 rooms', color: '#7B3F26', href: '/brands#moonlit-hearth',
     image: '/images/MoonlitHearth.png', alt: 'A heritage boutique stay',
   },
 ]
@@ -254,7 +254,7 @@ export default function BrandCollections() {
   const go = (i) => setIndex(Math.min(Math.max(i, 0), max))
 
   // side arrows: sm and up only (unchanged); on phones they move below the cards
-  const arrow = 'absolute top-[30%] z-10 hidden h-11 w-9 items-center justify-center text-[#0B1B33] transition-colors hover:text-[#A8842F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33] disabled:opacity-25 disabled:hover:text-[#0B1B33] sm:flex sm:w-10'
+  const arrow = 'absolute top-[30%] z-10 hidden h-11 w-9 items-center justify-center text-[#0B1B33] transition-colors hover:text-[#A8842F] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33] disabled:opacity-25 disabled:hover:text-[#0B1B33] sm:flex sm:w-10'
   const mobArrow = 'flex h-11 w-11 shrink-0 items-center justify-center text-[#0B1B33] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33] disabled:opacity-25 sm:hidden'
 
   return (

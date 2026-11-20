@@ -10,9 +10,9 @@ const LOGO = '/images/logo.png'
 
 /* ------------------------------- content ------------------------------- */
 const announcements = [
-  { label: 'Moonlit Circle:', text: 'One loyalty program for every Moonlit hotel. Join free when it launches.', link: 'Learn more', href: '/services' },
-  { label: 'Franchise:', text: 'Moonlit Select, Inn and Hearth first. Grand and Sanctuary by approval.', link: 'See how it works', href: '/services/franchise' },
-  { label: 'For hotel owners:', text: 'Start with an Asset Health Check or a site visit.', link: 'Get in touch', href: '/contact?type=health-check' },
+  { label: 'Moonlit Circle:', text: 'One loyalty program for every Moonlit hotel. Join free when it launches.', link: 'Learn more', href: '/loyalty-program' },
+  { label: 'Franchise:', text: 'Moonlit Select, Inn and Hearth first. Grand and Sanctuary by approval.', link: 'See how it works', href: '/services' },
+  { label: 'For hotel owners:', text: 'Start with an Asset Health Check or a site visit.', link: 'Get in touch', href: '/contact-us' },
 ]
 
 const brands = [
@@ -609,7 +609,7 @@ export default function Navbar({ onSearch }) {
                 </svg>
                 Book now
               </button>
-              <NavLink href="/contact?type=partner" onClick={closeAll}
+              <NavLink href="/contact-us" onClick={closeAll}
                 className={`block rounded-sm border-2 border-[#F6F4EF]/40 px-6 py-3 text-center text-[13px] font-bold uppercase tracking-wide text-[#F6F4EF] transition-colors hover:border-[#C6A560] hover:text-[#C6A560] ${ring}`}>
                 Partner with us
               </NavLink>

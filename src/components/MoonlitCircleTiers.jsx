@@ -283,12 +283,12 @@ export default function MoonlitCircleTiers() {
                       <p className="mt-2 text-[20px] font-semibold uppercase tracking-wide text-[#A8842F]">{t.nights}</p>
                       <div aria-hidden="true" className="mx-auto my-5 h-px w-16 bg-[#5F6B7A]/40" />
                       <p className="text-[18px] leading-relaxed text-[#5F6B7A]">{t.text}</p>
-                      <NavLink href="/moonlit-circle#how-it-works"
+                      <NavLink href="/loyalty-program#how-it-works"
                         className="mt-4 inline-block self-center text-[18px] text-[#152A4D] underline underline-offset-2 hover:text-[#A8842F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33]">
                         See how it works
                       </NavLink>
                       <div className="mt-auto pt-6">
-                        <NavLink href="/moonlit-circle#join"
+                        <NavLink href="loyalty-program#join"
                           className="block border-2 border-[#A8842F] px-4 py-3 text-center text-[16px] font-bold uppercase tracking-wide text-[#0B1B33] transition-colors hover:bg-[#C6A560] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1B33] focus-visible:ring-offset-2">
                           {t.cta}
                         </NavLink>

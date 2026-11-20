@@ -1,35 +1,19 @@
 import { useState } from 'react'
 
-/*
-  FOOTER (Wyndham footer layout, Moonlit content)
-  Part 1: logo and the brand directory, grouped by tier, with a handle to hide or show it.
-  Part 2: link columns, contact details and social icons.
-  Part 3: copyright line.
 
-  Client colours, written as hex codes:
-    Midnight Navy #0B1B33 (footer) · Royal Navy #152A4D (brand directory)
-    Moonlit Gold #C6A560 · Himalayan White #F6F4EF · Slate Stone #5F6B7A
-
-  Swap this one line if the project uses Inertia:
-  import { Link as NavLink } from '@inertiajs/react'
-*/
 const NavLink = ({ href, children, ...props }) => (
   <a href={href} {...props}>{children}</a>
 )
-
-// Same logo file as the navbar. It sits on a dark background, so use the gold or white version.
 const LOGO = '/images/logo.png'
 
-/* ------------------------------- content ------------------------------- */
-// Brand directory, grouped by tier (from the Brand family factsheet)
 const tiers = [
   { label: 'Luxury', brands: [
-    { name: 'Moonlit Grand', href: '/brands/grand' },
-    { name: 'Moonlit Sanctuary', href: '/brands/sanctuary' },
+    { name: 'Moonlit Grand', href: '/brands#moonlit-grand' },
+    { name: 'Moonlit Sanctuary', href: '/brands#moonlit-sanctuary' },
   ] },
-  { label: 'Upscale', brands: [{ name: 'Moonlit Select', href: '/brands/select' }] },
-  { label: 'Midscale', brands: [{ name: 'Moonlit Inn', href: '/brands/inn' }] },
-  { label: 'Boutique Heritage', brands: [{ name: 'Moonlit Hearth', href: '/brands/hearth' }] },
+  { label: 'Upscale', brands: [{ name: 'Moonlit Select', href: '/brands#moonlit-select' }] },
+  { label: 'Midscale', brands: [{ name: 'Moonlit Inn', href: '/brands#moonlit-inn' }] },
+  { label: 'Boutique Heritage', brands: [{ name: 'Moonlit Hearth', href: '/brands#moonlit-hearth' }] },
 ]
 
 const columns = [
@@ -37,14 +21,13 @@ const columns = [
     { title: 'Moonlit Hotels & Resorts', links: [
       { name: 'About', href: '/about' },
       { name: 'Our brands', href: '/brands' },
-      { name: 'Leadership', href: '/about/leadership' },
-      { name: 'Why owners choose us', href: '/about/why-mhr' },
-      { name: 'Site map', href: '/sitemap' },
+      { name: 'Leadership', href: '/about' },
+      { name: 'Why owners choose us', href: '/about' },
     ] },
     { title: 'Contact', links: [
       { name: 'marketing@moonlithotels.com', href: 'mailto:marketing@moonlithotels.com' },
       { name: 'moonlithotels@gmail.com', href: 'mailto:moonlithotels@gmail.com' },
-      { name: 'Contact form', href: '/contact' },
+      { name: 'Contact form', href: '/contact-us' },
     ], address: 'Kathmandu, Nepal' },
   ],
   [
@@ -58,20 +41,20 @@ const columns = [
       { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Terms of Use', href: '/terms' },
       { name: 'Cookie Consent', href: '/cookies' },
-      { name: 'Moonlit Circle terms (coming soon)', href: '/moonlit-circle#terms' },
+      { name: 'Moonlit Circle terms (coming soon)', href: '/loyalty-program#terms' },
     ] },
   ],
   [
     { title: 'Owner Resources', links: [
-      { name: 'Asset Health Check', href: '/contact?type=health-check' },
+      { name: 'Asset Health Check', href: '/contact-us' },
       { name: 'Franchise information', href: '/services/franchise' },
       { name: 'Moonlit Academy', href: '/services/franchise#academy' },
       { name: 'Our method', href: '/about#method' },
     ] },
     { title: 'Moonlit Circle', links: [
-      { name: 'How it works', href: '/moonlit-circle#how-it-works' },
-      { name: 'The four tiers', href: '/moonlit-circle#tiers' },
-      { name: 'Join free', href: '/moonlit-circle#join' },
+      { name: 'How it works', href: '/loyalty-program#how-it-works' },
+      { name: 'The four tiers', href: '/loyalty-program#tiers' },
+      { name: 'Join free', href: '/loyalty-program#join' },
     ] },
   ],
 ]
@@ -198,7 +181,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-2 border-t border-[#F6F4EF]/20 pt-6 text-center text-[13px] text-[#F6F4EF]/70 sm:flex-row sm:text-left">
           <p>&copy; {new Date().getFullYear()} Moonlit Hotels &amp; Resorts. All rights reserved.</p>
          <p>
-  Crafted by{" "}
+  Crafted by:{" "}
   <a
     href="https://sait.com.np/"
     target="_blank"

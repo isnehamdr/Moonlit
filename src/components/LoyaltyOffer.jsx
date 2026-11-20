@@ -170,7 +170,7 @@ export default function LoyaltyOffer() {
           <p className="mt-4 text-[15px] leading-relaxed text-[#F6F4EF]/80 sm:text-base">
             Moonlit Circle is the loyalty program of Moonlit Hotels &amp; Resorts. Your light is on wherever you stay.
             Your data stays private, and we ask for marketing consent separately.{' '}
-            <NavLink href="/moonlit-circle#how-it-works"
+            <NavLink href="/loyalty-program#how-it-works"
               className="text-[#C6A560] underline underline-offset-2 hover:text-[#F6F4EF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A560]">
               See how it works
             </NavLink>
@@ -190,7 +190,7 @@ export default function LoyaltyOffer() {
             ))}
           </ol>
 
-          <NavLink href="/moonlit-circle#join"
+          <NavLink href="/contact-us"
             className="mt-8 block bg-[#C6A560] px-6 py-3.5 text-center text-[14px] font-bold uppercase tracking-wide text-[#0B1B33] transition-colors hover:bg-[#A8842F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F6F4EF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#152A4D] sm:inline-block sm:px-10 sm:text-left">
             Join Moonlit Circle
           </NavLink>
